@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/new.css">
+</head>
+<body class="poppins-regular">
+    <header class="header">
+        <div class="dev">
+            <img src="assets/logo.png" alt="">
+            <div class="logo"><span class="n1">Dev</span><span class="n2">Board</span></div>
+        </div>
+        <div class="header-right">
+          <div class="checkpoint">
+            <div class="checkpoint-icon">
+              <img src="assets/checkbox.png" alt="">
+            </div> <span class="checkpoint-count" id="checkpointCount">23</span>
+          </div>
+          <div class="theme-switcher">
+            <img class="theme-switcher-icon" src="assets/theme-btn.png" alt="">
+          </div>
+        </div>
+    </header>
+
+    <div class=" dashboard dashboard-content">
+
+        <div class="dashboard-top">
+        <div class="task-assigned">
+          <div class=" icon task-icon">
+            <img src="assets/checkbox.png" alt="">
+          </div>
+          <div class="task-info">
+            <p>Task Assigned</p>
+            <h2 id="taskAssignedCount">05</h2>
+          </div>
+        </div>
+
+        <div class="discover-banner" id="discoverBanner">
+          <div class="calendar-icon board">
+           <img src="assets/board.png" alt="">
+          </div>
+          <div class="discover-text">
+            <p>Discover Something <br> New Today!</p>
+          </div>
+        </div>
+
+        <div class="date-display">
+          <div class=" icon calendar-icon">
+           <img src="assets/calender.png" alt="">
+          </div>
+          <div class="date-info">
+            <p>Wed,</p>
+            <p>Jul 28 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-content-wrapper">
+        <div class="task-grid">
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">ShopEase</span>
+            </div>
+            <h3 class="task-title">Fix Mobile Button Issue</h3>
+            <p class="task-description">Debug using Chrome DevTools, check for overlapping...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn1">Completed</button>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">CloudSync</span>
+            </div>
+            <h3 class="task-title">Add Dark Mode</h3>
+            <p class="task-description">Store the user's preference in localStorage, update CSS...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn2">Completed</button>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">SwiftPay</span>
+            </div>
+            <h3 class="task-title">Optimize Home page</h3>
+            <p class="task-description">Debug using Chrome DevTools, check for overlapping...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn3">Completed</button>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">Meta</span>
+            </div>
+            <h3 class="task-title">Add new emoji 😊</h3>
+            <p class="task-description">Debug using Chrome DevTools, check for overlapping...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn4">Completed</button>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">Google LLC</span>
+            </div>
+            <h3 class="task-title">Integrate OpenAI API</h3>
+            <p class="task-description">Debug using Chrome DevTools, check for overlapping...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn5">Completed</button>
+            </div>
+          </div>
+
+          <div class="task-card">
+            <div class="task-card-header">
+              <span class="company">Glassdoor</span>
+            </div>
+            <h3 class="task-title">Improve Job searching</h3>
+            <p class="task-description">Debug using Chrome DevTools, check for overlapping...</p>
+            <div class="task-footer">
+              <div class="deadline">
+                <span>Deadline</span>
+                <span>21 March 2025</span>
+              </div>
+              <button class="completed-btn" id="completeBtn6">Completed</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="activity-log">
+          <div class="activity-header">
+            <div class="activity-title">
+              <img src="assets/activity.png" alt="">
+              <span>Activity Log</span>
+            </div>
+            <button class="clear-history" id="clearHistoryBtn">Clear History</button>
+          </div>
+          <div class="activity-items" id="activityItemsContainer">
+              </div>
+        </div>
+      </div>
+
+
+    </div>
+    <script src="js/new.js"></script>
+</body>
+</html>
